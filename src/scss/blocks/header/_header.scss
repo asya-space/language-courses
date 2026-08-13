@@ -1,0 +1,45 @@
+@use "../../variables/vars";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: vars.$ctr;
+    height: 150px;
+    padding: 0 100px;
+    &__left-block {
+        display: flex;
+        justify-content: space-between;
+        min-width: 550px;
+    }
+    &__logo {
+        max-width: 170px;
+        img {
+            width: 100%;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: vars.$ctr;
+    }
+    &__link {
+        position: relative;
+        margin-right: 45px;
+        font-weight: bold;
+        font-size: 18px;
+        color: vars.$dark;
+        &:after {
+            content: '';
+            position: vars.$abs;
+            display: block;
+            width: 110%;
+            left: -5%;
+            bottom: -1px;
+            z-index: -1;
+            height: 8px;
+            background: vars.$primary;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

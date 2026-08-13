@@ -1,0 +1,26 @@
+@use "../../variables/vars";
+
+.footer {
+    min-height: 180px;
+    background-color: vars.$dark;
+    padding: 45px 0 50px 0;
+    color: vars.$white;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .link {
+        display: block;
+        margin-top: 15px;
+        font-size: 16px;
+        color: vars.$white;
+    }
+    .call {
+        text-align: right;
+    }
+}

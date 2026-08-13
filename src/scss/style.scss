@@ -1,0 +1,16 @@
+@use "sass:meta";
+@use './variables/_vars.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext');
+@include meta.load-css('./base.scss');
+
+@include meta.load-css('./blocks/header/header.scss');
+@include meta.load-css('./blocks/sidepanel/sidepanel');
+@include meta.load-css('./blocks/preview/preview');
+@include meta.load-css('./blocks/offer/offer');
+@include meta.load-css('./blocks/calculating/calculating');
+@include meta.load-css('./blocks/course/course');
+@include meta.load-css('./blocks/order/order');
+@include meta.load-css('./blocks/promotion/promotion');
+@include meta.load-css('./blocks/footer/footer');
+@include meta.load-css('./blocks/modal/modal');
