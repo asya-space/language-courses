@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Course</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="/img/logo.png" alt="Logo">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Our coursers</a>
+                <a href="#" class="header__link">About Us</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <button class="btn btn_white">Contact with us!</button>
+        </div>
+    </header>
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Social media</span></div>
+        <div class="sidepanel__divider"></div>
+        <a href="#" class="sidepanel__icon">
+            <img src="/icons/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="sidepanel__icon">
+            <img src="/icons/facebook.svg" alt="facebook">
+        </a>
+    </div>
+
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="/img/tabs/tab-1.png" alt="A1 German course">
+                    <div class="tabcontent__descr">
+                        Our A1 German course is designed for complete beginners. Learn essential vocabulary, basic grammar, and everyday phrases while building a solid foundation for your German journey.
+                    </div>
+                </div>
+                <!-- <div class="tabcontent">
+                    <img src="/img/tabs/tab-2.png" alt="A2 German course">
+                    <div class="tabcontent__descr">
+                        Our A2 German course helps you move beyond the basics. Expand your vocabulary, improve your grammar, and practice everyday conversations to become more confident in German.                                   
+                    </div>
+                </div> -->
+                <!-- <div class="tabcontent">
+                    <img src="/img/tabs/tab-3.png" alt="B1 German course">
+                    <div class="tabcontent__descr">
+                        Our B1 German course focuses on independent communication. Develop your speaking and listening skills, learn more complex grammar, and handle everyday situations with confidence.                                    
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="/img/tabs/tab-4.png" alt="B2 German course">
+                    <div class="tabcontent__descr">
+                        Our B2 German course is designed for confident learners who want to communicate more naturally and advanced. Improve your fluency, expand your vocabulary, and work with authentic German content.
+                    </div>
+                </div> -->
+                <div class="tabheader">
+                    <h3>Choose your level</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">A1 Beginner</div>
+                        <div class="tabheader__item">A2 Elementary</div>
+                        <div class="tabheader__item">B1 Intermediate</div>
+                        <div class="tabheader__item">B2 Upper-Intermediate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Start speaking German with confidence!</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">What can we offer you?</h2>
+                <div class="offer__descr">
+                    Learning German doesn't have to be overwhelming. Our courses combine clear explanations, practical exercises, and real-life communication. Choose your level, learn at your own pace, and build the skills you need for everyday life, travel, work, or further study.
+                </div>
+            </div>
+            <div class="offer__action">
+                <button class="btn btn_dark">Book a Trial Lesson</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Structured Learning</h2>
+                <div class="offer__advantages-text">
+                    Follow a clear learning path from the basics to confident communication. Each course is built around practical vocabulary, grammar, listening, and speaking.
+                </div>
+                <h2>Practical German</h2>
+                <div class="offer__advantages-text">
+                    Learn the German you can actually use. Practice everyday situations, useful expressions, and communication skills that go beyond memorizing grammar rules.
+                </div>
+            </div>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="/icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="/icons/right.svg" alt="next">
+                    </div>
+                </div>
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slide">
+                        <img src="/img/slider/slide-1.png" alt="first-slide">
+                    </div>
+                    <!-- <div class="offer__slide">
+                        <img src="/img/slider/slide-2.png" alt="second-slide">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="/img/slider/slide-3.png" alt="third-slide">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="/img/slider/slide-4.png" alt="fourth-slide">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="calculating">
+        <div class="container">
+            <h2 class="title">Find the right course for you
+            </h2>
+            <div class="calculating__field">
+                <div class="calculating__subtitle">
+                    What is your current level?
+                </div>
+                <div class="calculating__choose" id="beginner">
+                    <div class="calculating__choose-item calculating__choose-item_active">Beginner</div>
+                    <div class="calculating__choose-item">Intermediate</div>
+                </div>
+
+                <div class="calculating__subtitle">
+                    What is your main goal?
+                </div>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input type="text" id="job" placeholder="Work & Career" class="calculating__choose-item">
+                    <input type="text" id="travel" placeholder="Travel"  class="calculating__choose-item">
+                    <input type="text" id="daily" placeholder="Everyday German" class="calculating__choose-item">
+                </div>
+
+                <div class="calculating__subtitle">
+                    How much time can you study?
+                </div>
+                <div class="calculating__choose calculating__choose_big">
+                    <div id="low" class="calculating__choose-item">1-2 hours per week</div>
+                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">3-4 hours per week</div>
+                    <div id="medium" class="calculating__choose-item">5-6 hours per week</div>
+                    <div id="high" class="calculating__choose-item">7+ hours per week</div>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <div class="calculating__subtitle">
+                        Recommended weekly study time:
+                    </div>
+                    <div class="calculating__result">
+                        <span>4</span> hours
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="course">
+        <h2 class="title">Our German courses</h2>
+
+        <div class="course__field">
+            <div class="container">
+                <div class="course__item">
+                    <img src="/img/tabs/tab-1.png" alt="Beginner Level">
+                    <h3 class="course__item-subtitle">A1 Beginner</h3>
+                    <div class="course__item-descr">Start from the basics. Learn pronunciation, essential vocabulary, basic grammar, and simple phrases for everyday communication.</div>
+                    <div class="course__item-divider"></div>
+                    <div class="course__item-price">
+                        <div class="course__item-cost">Course:</div>
+                        <div class="course__item-total"><span>8</span> weeks</div>
+                    </div>
+                </div>
+                <div class="course__item">
+                    <img src="/img/slider/slide-4.png" alt="Elementary Level">
+                    <h3 class="course__item-subtitle">A2 Elementary</h3>
+                    <div class="course__item-descr">Expand your vocabulary and become more comfortable with everyday German. Practice conversations, useful grammar structures, and common situations.</div>
+                    <div class="course__item-divider"></div>
+                    <div class="course__item-price">
+                        <div class="course__item-cost">Course:</div>
+                        <div class="course__item-total"><span>16</span> weeks</div>
+                    </div>
+                </div>
+                <div class="course__item">
+                    <img src="/img/tabs/tab-4.png" alt="Intermediate Level">
+                    <h3 class="course__item-subtitle">B1 Intermediate</h3>
+                    <div class="course__item-descr">Move beyond the basics and communicate more independently. Improve your speaking, listening, grammar, and vocabulary for real-life situations.</div>
+                    <div class="course__item-divider"></div>
+                    <div class="course__item-price">
+                        <div class="course__item-cost">Course:</div>
+                        <div class="course__item-total"><span>16</span> weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <div class="title">Book your trial lesson today!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="Your name" name="name" type="text" class="order__input">
+                <input required placeholder="Your email" name="phone" type="phone" class="order__input">
+                <img src="/icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Special offer for new students!</div>
+                <div class="promotion__descr">
+                    Start your German learning journey with us and get <span>20% off</span> your first course!
+                    <br><br>
+                    Offer ends soon.
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">Offer ends in:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        days
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        hours
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        minutes
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">Keep in touch with us:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="src/icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">Or contact us:</div>
+                <a href="https://hello@germancourse.com" class="link">hello@germancourse.com</a>
+                <a href="tel:+49 123 456 789" class="link">+49 123 456 789</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close">&times;</div>
+                    <div class="modal__title">We'll get back to you as soon as possible!</div>
+                    <input required placeholder="Your name" name="name" type="text" class="modal__input">
+                    <input required placeholder="Your email" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Contact to me</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
