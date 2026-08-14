@@ -67,11 +67,11 @@
         margin-top: 10px;
         color: rgba(0, 0, 0, 0.6);
         cursor: pointer;
-        transition: 0.3s all;
-        &_active {
-            color: black;
-            font-size: 22px;
-            font-weight: 700;
-        }
+        transition: 0.3s all ease-in-out;
     }
+}
+
+.active {
+    color: black;
+    font-weight: 700;
 }
