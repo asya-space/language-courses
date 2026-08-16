@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
               minutes = clock.querySelector('#minutes'),
               seconds = clock.querySelector('#seconds');
 
-        const updateTime = setInterval(updateClock, 1000);
+        const updateTime = setInterval(updateClock, 1000); // function withaout brackets. no updateClock();
 
         updateClock();
         function updateClock(endtime) {
@@ -88,4 +88,38 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     setClock(deadline, '.timer');
+
+    // modal window
+
+    const modal = document.querySelector('.modal'),
+          modalBtn = document.querySelectorAll('[data-modal]'),
+          modalClose = document.querySelector('[data-close]');
+    
+    function hideModal() {
+        document.body.style.overflow = ''; // scroll start
+        modal.classList.toggle('hide');
+    };
+
+    function showModal() {
+        modalBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.body.style.overflow = 'hidden'; // scroll stop
+                modal.classList.toggle('hide');
+            });
+        });
+    };
+
+    showModal();
+
+    modalClose.addEventListener('click', hideModal);
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) hideModal();
+    });
+
+    document.addEventListener('keydown', (e) => { // close modal with Esc btn
+        if (e.code === 'Escape' && !modal.classList.contains('hide')) {
+            hideModal();
+        }
+    });
 });
