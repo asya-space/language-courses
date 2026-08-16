@@ -39,12 +39,12 @@
         right: -177px;
         width: 550px;
         height: 359px;
-        background: rgba(255, 222, 89, 0.8); // primary yellow
+        background: rgba(255, 222, 89, 0.8);
         padding: 50px;
         font-size: 24px;
         font-weight: 300;
         line-height: 36px;
-        color: rgba(0, 0, 0, 0.7);
+        color: vars.$dark;
     }
 }
 .tabheader {
@@ -65,13 +65,13 @@
         font-size: 18px;
         font-weight: 300;
         margin-top: 10px;
-        color: rgba(0, 0, 0, 0.6);
+        color: vars.$dark;
         cursor: pointer;
         transition: 0.3s all ease-in-out;
     }
 }
 
 .active {
-    color: black;
+    color: #D96B6B;
     font-weight: 700;
 }
